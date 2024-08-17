@@ -70,7 +70,7 @@ const Prive = () => {
         <div className="max-w-screen">
             <Navbar />
             {/* <div className="bg-[url('https://alpencapital.com/assets/images/banner1.jpg')] bg-cover bg-center h-screen p-10 md:p-20 flex flex-col justify-center items-start"> */}
-            <div className="bg-[url('../../assets/images/Yacht_3.png')]  md:bg-[url('../../assets/images/YACHT1.png')] bg-cover bg-center h-screen p-10 md:p-20 flex flex-col justify-center items-start">
+            <div className="bg-[url('../../../public/Yacht_3.webp')]  md:bg-[url('../../../public/YACHT1.webp')] bg-cover bg-center h-screen p-10 md:p-20 flex flex-col justify-center items-start">
 
                 {/* <img
                     src="/sound-solutions.svg"

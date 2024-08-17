@@ -120,6 +120,9 @@ function MobileNavigation() {
                                     <MobileNavItem href="/iris">
                                         IRIS
                                     </MobileNavItem>
+                                    <MobileNavItem href="/prive">
+                                        PRIVE
+                                    </MobileNavItem>
                                     <MobileNavItem href="/ethosphere">
                                         Ethosphere
                                     </MobileNavItem>

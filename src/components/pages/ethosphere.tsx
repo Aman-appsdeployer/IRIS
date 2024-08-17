@@ -1,16 +1,16 @@
 import { blogs } from "@/lib/blogs";
 import BlogCard from "../blog-card"
 import { useMemo, useState } from "react";
-import { ChevronDown } from "lucide-react";
+// import { ChevronDown } from "lucide-react";
 import '../../styles/ethosphere.css'
 
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "../ui/select";
+// import {
+//     Select,
+//     SelectContent,
+//     SelectItem,
+//     SelectTrigger,
+//     SelectValue,
+// } from "../ui/select";
 
 const Ethosphere = () => {
 

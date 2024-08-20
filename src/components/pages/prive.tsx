@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 // import 'aos/dist/aos.css';
 // import { useEffect } from "react";
 import { motion } from 'framer-motion';
-import UseInView from "../ui/UseInView";
+// import UseInView from "../ui/UseInView";
 import video from '../../assets/images/waves 3.mp4'
 
 const Prive = () => {
@@ -127,15 +127,15 @@ const Prive = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 mt-5 px-5 ">
                     {service.map((service, index) => {
-                        const [ref, inView] = UseInView();
+                        // const [ref, inView] = UseInView();
                         return (
                             <motion.div
-                                ref={ref}
+                                // ref={ref}
                                 key={index}
                                 initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50, y: 50 }}
-                                animate={inView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, x: index % 2 === 0 ? 50 : -50, y: 50 }}
+                                // animate={inView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, x: index % 2 === 0 ? 50 : -50, y: 50 }}
                                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                                className="w-full max-w-sm  lg:max-w-2xl  rounded-lg px-4 py-2  shadow-sm hover:shadow-md transition-shadow duration-200 "
+                                className="w-full max-w-sm  lg:max-w-2xl  rounded-lg px-4 py-2  shadow-sm hover:shadow-md transition-shadow duration-200"
                                 style={{ backgroundImage: 'linear-gradient(110deg, #3d4957, 55%, #4a5663)' }}
                             >
                                 <div>

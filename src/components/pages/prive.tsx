@@ -1,17 +1,20 @@
 import { Navbar } from "../navbar"
 import { Footer } from "../footer"
 import { useNavigate } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import { useEffect } from "react";
+import { motion } from 'framer-motion';
+import UseInView from "../ui/UseInView";
+import video from '../../assets/images/waves 3.mp4'
 
 const Prive = () => {
     const navigate = useNavigate();
-    useEffect(() => {
-        AOS.init({
-            duration: 1200, // Adjust the duration as needed
-        });
-    }, []);
+    // useEffect(() => {
+    //     AOS.init({
+    //         duration: 1200, // Adjust the duration as needed
+    //     });
+    // }, []);
 
     const service = [
         {
@@ -70,22 +73,29 @@ const Prive = () => {
         <div className="max-w-screen">
             <Navbar />
             {/* <div className="bg-[url('https://alpencapital.com/assets/images/banner1.jpg')] bg-cover bg-center h-screen p-10 md:p-20 flex flex-col justify-center items-start"> */}
-            <div className="bg-[url('/Yacht_3.webp')]  md:bg-[url('/YACHT1.webp')] bg-cover bg-center h-screen p-10 md:p-20 flex flex-col justify-center items-start">
+            {/* Background Video Section */}
+            <div className="relative h-screen p-10 md:p-20 flex flex-col justify-center items-start overflow-hidden">
+                <video
+                    className="absolute inset-0 w-full h-full object-cover"
+                    autoPlay
+                    muted
+                    // loop
+                >
+                    <source src={video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
 
-                {/* <img
-                    src="/sound-solutions.svg"
-                    alt="Sound Solutions"
-                    className="h-50 w-50 md:h-3/12 md:w-3/12"
-                /> */}
-                {/*  */}
-                <h1 className="text-transparent font-cannes text-2xl sm:text-3xl md:text-5xl font-bold sm:my-2 mt-5 lg:w-6/12 md:w-6/12 tracking-wide bg-clip-text bg-gradient-to-r from-[#ba9e72] via-[#ccb48d] to-[#d1ba96]">Navigating Your Financial Voyage With Distinction</h1>
-
-                <h2 className="text-white font-cannes font-bold text-xl sm:text-3xl font-base mt-2 md:w-6/12 tracking-wide ">
-                    Bespoke Wealth Management Solutions
-                </h2>
-                <p className="text-white font-sans text-sm sm:text-base  mt-5 tracking-wide leading-4">
-                    Preserving and growing your legacy, with a focus on your values.
-                </p>
+                <div className="relative z-10 text-center md:text-left">
+                    <h1 className="text-transparent font-sf-pro-display text-2xl sm:text-3xl md:text-4xl font-bold sm:my-2 mt-5 lg:w-8/12 md:w-6/12 tracking-wide bg-clip-text bg-gradient-to-r from-[#ba9e72] via-[#ccb48d] to-[#d1ba96]">
+                        Navigating Your Financial Voyage With Distinction
+                    </h1>
+                    <h2 className="text-custom-dark-blue font-sf-pro-display font-bold text-xl sm:text-3xl font-base mt-2 md:w-6/12 tracking-wide">
+                        Bespoke Wealth Management Solutions
+                    </h2>
+                    <p className="text-custom-dark-blue font-sf-pro-display  text-sm sm:text-base mt-5 tracking-wide leading-4">
+                        Preserving and growing your legacy, with a focus on your values.
+                    </p>
+                </div>
             </div>
             {/* <div className="flex-col flex md:flex-row mt-20 " >
                 <div className="w-full md:w-2/6 flex h-80 justify-center items-center">
@@ -108,7 +118,7 @@ const Prive = () => {
                     <div className="absolute w-full h-20 bottom-0 bg-gradient-to-b from-transparent to-background" />
                 </div>
             </div> */}
-            <div className="bg-custom-dark-blue py-10 container">
+            <div className=" py-10 container">
                 <div className="justify-center flex align-middle">
                     <h1 className="font-cannes text-3xl pb-5 font-bold leading-tight text-transparent  bg-clip-text bg-gradient-to-r from-[#ba9e72] via-[#ccb48d] to-[#d1ba96] sm:text-4xl lg:text-6xl">
                         Services
@@ -116,44 +126,50 @@ const Prive = () => {
 
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 mt-5 px-5 ">
-                    {service.map((service, index) => (
-                        <div
-                            key={index}
-                            data-aos={index % 2 === 0 ? "fade-up-right" : "fade-up-left"}
-                            className="w-7/12 rounded-lg px-4 py-2  shadow-sm hover:shadow-md transition-shadow duration-200 "
-                            style={{ backgroundImage: 'linear-gradient(110deg, #3d4957, 55%, #4a5663)' }}
-                        >
-                            <div>
-                                <h3 className="text-base font-semibold text-card-heading">{service.title}</h3>
-                                <h2 className="text-sm text-slate-300 mt-1">{service.desc}</h2>
-                            </div>
-                        </div>
-                    ))}
+                    {service.map((service, index) => {
+                        const [ref, inView] = UseInView();
+                        return (
+                            <motion.div
+                                ref={ref}
+                                key={index}
+                                initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50, y: 50 }}
+                                animate={inView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, x: index % 2 === 0 ? 50 : -50, y: 50 }}
+                                transition={{ duration: 0.8, ease: 'easeOut' }}
+                                className="w-full max-w-sm  lg:max-w-2xl  rounded-lg px-4 py-2  shadow-sm hover:shadow-md transition-shadow duration-200 "
+                                style={{ backgroundImage: 'linear-gradient(110deg, #3d4957, 55%, #4a5663)' }}
+                            >
+                                <div>
+                                    <h3 className="sm:text-base text-sm font-semibold text-card-heading">{service.title}</h3>
+                                    <h2 className="sm:text-base text-xs text-slate-300 mt-1">{service.desc}</h2>
+                                </div>
+                            </motion.div>
+                        )
+                    })}
                 </div>
                 <div className="flex justify-center mt-10">
-    <button
-        className="md:col-start-2 inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#3d4957,45%,#1e2631,55%,#3d4957)] bg-[length:200%_100%] px-4 lg:px-6 font-medium text-background transition-transform transform hover:scale-105 duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 whitespace-nowrap"
-        type="button"
-        onClick={() => navigate("/hnis")}
-        data-aos="zoom-in" // AOS animation
-    >
-        PROSPER
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            stroke="currentColor"
-            className="w-4 h-4 ms-1"
-        >
-            <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-            />
-        </svg>
-    </button>
-</div>
+                    <button
+                        className="md:col-start-2 inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#3d4957,45%,#1e2631,55%,#3d4957)] bg-[length:200%_100%] px-4 lg:px-6 font-medium text-background transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 whitespace-nowrap"
+                        type="button"
+                        onClick={() => navigate("/hnis")}
+                        data-aos="zoom-in" // AOS animation
+                    >
+                        PROSPER
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            stroke="currentColor"
+                            className="w-4 h-4 ms-1"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                            />
+                        </svg>
+                    </button>
+                </div>
 
             </div><svg
                 xmlns="http://www.w3.org/2000/svg"

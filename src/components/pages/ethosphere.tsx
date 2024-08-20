@@ -17,26 +17,26 @@ const Ethosphere = () => {
     const [selectedYear, setSelectedYear] = useState<string>("2024");
     const [selectedMonth, setSelectedMonth] = useState<string>("none");
     const yearOptions = [
-        { label: "2023", value: "2023" },
+        // { label: "2023", value: "2023" },
         { label: "2024", value: "2024" },
-        { label: "2025", value: "2025" },
+        // { label: "2025", value: "2025" },
 
     ];
 
     const monthOptions = [
         { label: "All", value: "none" },
-        { label: "January", value: "January" },
-        { label: "February", value: "February" },
+        { label: "Jan", value: "January" },
+        { label: "Feb", value: "February" },
         { label: "March", value: "March" },
         { label: "April", value: "April" },
         { label: "May", value: "May" },
         { label: "June", value: "June" },
         { label: "July", value: "July" },
-        { label: "August", value: "August" },
-        { label: "September", value: "September" },
-        { label: "October", value: "October" },
-        { label: "November", value: "November" },
-        { label: "December", value: "December" }
+        { label: "Aug", value: "August" },
+        { label: "Sept", value: "September" },
+        { label: "Oct", value: "October" },
+        { label: "Nov", value: "November" },
+        { label: "Dec", value: "December" }
     ];
 
 
@@ -64,7 +64,7 @@ const Ethosphere = () => {
                         <button
                             key={i}
                             onClick={() => setSelectedYear(year.value)}
-                            className={`md:col-start-2 inline-flex h-8 lg:text-sm text-xs animate-shimmer items-center justify-center rounded-md border border-slate-800 px-4 sm:px-6 font-medium text-stone-950 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"  ${selectedYear === year.value ? 'bg-[linear-gradient(110deg,#3d4957,45%,#1e2631,55%,#3d4957)] bg-[length:200%_100%] text-slate-100' : ''}`}
+                            className={`md:col-start-2 inline-flex h-8 lg:text-sm text-xs animate-shimmer items-center justify-center rounded-md border border-slate-800 px-4 sm:px-6 font-medium text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"  ${selectedYear === year.value ? 'bg-[linear-gradient(110deg,#3d4957,45%,#1e2631,55%,#3d4957)] bg-[length:200%_100%] text-slate-100' : ''}`}
                         >
                             {year.label}
                             {/* portfolio home search portanalysis  */}
@@ -106,13 +106,13 @@ const Ethosphere = () => {
                         </SelectContent>
                     </Select> */}
                 </div>
-                <div id="monthscrollbar" className="w-full flex flex-row justify-start gap-2 overflow-x-auto container mx-50 py-4 mt-5">
+                <div id="monthscrollbar" className="w-full flex flex-row justify-start gap-1 overflow-x-auto container mx-50 py-4 mt-2">
                     {monthOptions.map((month, i) => {
                         return (
                             <button
                                 key={i}
                                 onClick={() => setSelectedMonth(month.value)}
-                                className={`md:col-start-2 inline-flex h-8 lg:text-sm text-xs animate-shimmer items-center justify-center rounded-md border border-slate-800 px-4  text-stone-950 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"  ${selectedMonth === month.value ? 'bg-[linear-gradient(110deg,#3d4957,45%,#1e2631,55%,#3d4957)] bg-[length:200%_100%] text-slate-100' : ''}`}
+                                className={`md:col-start-2 inline-flex h-4 lg:text-sm text-xs animate-shimmer items-center justify-center  border-e border-slate-800 px-1   transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"  ${selectedMonth === month.value ? ' text-gold' : 'text-stone-950'}`}
                             >{month.label}</button>
                         )
                     })}

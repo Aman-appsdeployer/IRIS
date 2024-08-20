@@ -85,6 +85,11 @@
     src: url('./assets/fonts/Gotham-Font/Gotham-Bold.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'sf-pro-display';
+  src: url('./assets/fonts/sf-pro-display//SFPRODISPLAYREGULAR.OTF') format('truetype');
+}
+
 .abtWrap {
     display: flex;
     align-items: flex-end;

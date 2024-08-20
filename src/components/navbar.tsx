@@ -175,8 +175,8 @@ function DesktopNavigation() {
                 <NavItem href="/">Home</NavItem>
                 <NavItem href="/advisory">Advisory</NavItem>
                 {/* <NavItem href="/faqs">FAQ's</NavItem> */}
-                <NavItem href="/iris">IRIS</NavItem>
                 <NavItem href="/prive">Prive</NavItem>
+                <NavItem href="/iris">IRIS</NavItem>
                 <NavItem href="/ethosphere">Ethosphere</NavItem>
             </ul>
         </nav>

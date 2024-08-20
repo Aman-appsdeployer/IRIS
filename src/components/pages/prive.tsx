@@ -128,6 +128,7 @@ const Prive = () => {
                 <div className="flex flex-col items-center justify-center gap-4 mt-5 px-5 ">
                     {service.map((service, index) => {
                         // const [ref, inView] = UseInView();
+                        
                         return (
                             <motion.div
                                 // ref={ref}

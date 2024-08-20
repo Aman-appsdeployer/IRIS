@@ -1,6 +1,12 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 
-export const BlurImage = ({
+interface BlurImageProps {
+  src: string;
+  className?: string;  // This is optional
+  alt?: string;        // This is also optional
+}
+
+export const BlurImage: React.FC<BlurImageProps> = ({
   src,
   className,
   alt,

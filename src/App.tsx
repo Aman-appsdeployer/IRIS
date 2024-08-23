@@ -14,7 +14,7 @@ import Cookies from "./components/pages/cookies";
 import Iris from "./components/pages/iris";
 import Ethosphere from "./components/pages/ethosphere";
 import Prive from "./components/pages/prive";
-import {Hnis} from "./components/pages/hnis";
+// import {Hnis} from "./components/pages/hnis";
 
 const App = () => {
     return (
@@ -34,7 +34,7 @@ const App = () => {
                     <Route path="stock" element={<Stock />} />
                     <Route path="iris" element={<Iris />} />
                     <Route path="ethosphere" element={<Ethosphere />} />
-                    <Route path="hnis" element={<Hnis />} />
+                    {/* <Route path="hnis" element={<Hnis />} /> */}
                 </Route>
                 <Route path="prive" element={<Prive />} />
             </Routes>

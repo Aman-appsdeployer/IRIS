@@ -92,8 +92,8 @@ const Hero_ = () => {
                         </div>
 
                         <div className="mt-6 flex gap-6 items-center justify-center">
-                            <GooglePlay className="cursor-pointer w-24 md:w-36" />
-                            <AppStore className="cursor-pointer w-24 md:w-36" />
+                            <GooglePlay  />
+                            <AppStore  />
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import '../../styles/googleAppleBtn.css'
-export const GooglePlay = ( ) => (
+export const GooglePlay = () => (
     <a
         href={
             "https://play.google.com/store/apps/details?id=com.nuqi.nuqi_wealth_app"
@@ -110,7 +110,7 @@ export const GooglePlay = ( ) => (
     </a>
 );
 
-export const AppStore = (props: LucideProps) => {
+export const AppStore = () => {
     return (
         <a
             href={
@@ -256,7 +256,7 @@ export const AppStore = (props: LucideProps) => {
     );
 };
 
-import { LucideProps } from "lucide-react";
+// import { LucideProps } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 // import MeteorsCard from "../ui/meteor-card";
@@ -475,8 +475,8 @@ const Advisory = () => {
                 >
                     Download Now
                     <div className="mt-4 flex gap-6 items-center justify-center">
-                        <GooglePlay className="cursor-pointer w-24 md:w-36" />
-                        <AppStore className="cursor-pointer w-24 md:w-36" />
+                        <GooglePlay />
+                        <AppStore  />
                     </div>
                 </p>
             </div>

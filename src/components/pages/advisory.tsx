@@ -1,5 +1,5 @@
 import '../../styles/googleAppleBtn.css'
-export const GooglePlay = (props: LucideProps) => (
+export const GooglePlay = ( ) => (
     <a
         href={
             "https://play.google.com/store/apps/details?id=com.nuqi.nuqi_wealth_app"

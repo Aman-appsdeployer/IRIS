@@ -1,46 +1,46 @@
-import { cn } from "@/lib/utils";
-import { useState } from "react";
+// import { cn } from "@/lib/utils";
+// import { useState } from "react";
 
-const UpArrow = () => {
-    return (
-        <svg
-            className="w-6 h-6 text-gray-400 rotate-180"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-        >
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-            />
-        </svg>
-    );
-};
+// const UpArrow = () => {
+//     return (
+//         <svg
+//             className="w-6 h-6 text-gray-400 rotate-180"
+//             xmlns="http://www.w3.org/2000/svg"
+//             fill="none"
+//             viewBox="0 0 24 24"
+//             stroke="currentColor"
+//         >
+//             <path
+//                 stroke-linecap="round"
+//                 stroke-linejoin="round"
+//                 stroke-width="2"
+//                 d="M19 9l-7 7-7-7"
+//             />
+//         </svg>
+//     );
+// };
 
-const DownArrow = () => {
-    return (
-        <svg
-            className="w-6 h-6 text-gray-400"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-        >
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-            />
-        </svg>
-    );
-};
+// const DownArrow = () => {
+//     return (
+//         <svg
+//             className="w-6 h-6 text-gray-400"
+//             xmlns="http://www.w3.org/2000/svg"
+//             fill="none"
+//             viewBox="0 0 24 24"
+//             stroke="currentColor"
+//         >
+//             <path
+//                 stroke-linecap="round"
+//                 stroke-linejoin="round"
+//                 stroke-width="2"
+//                 d="M19 9l-7 7-7-7"
+//             />
+//         </svg>
+//     );
+// };
 
 const Faq = () => {
-    const [accordionIndex, setAccordionIndex] = useState(-1);
+    // const [accordionIndex, setAccordionIndex] = useState(-1);
 
     return (
         <section className="py-10 sm:py-16 lg:py-20">

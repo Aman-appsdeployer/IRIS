@@ -130,7 +130,7 @@
 
 // export default Ethosphere;
 
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { blogs } from "@/lib/blogs";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import '../../styles/ethosphere.css';

@@ -20,7 +20,7 @@ import {
 import { useEffect, useState } from "react";
 
 const Prive = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     // useEffect(() => {
     //     AOS.init({
     //         duration: 1200, // Adjust the duration as needed

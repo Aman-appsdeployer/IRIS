@@ -1,7 +1,7 @@
 // import { Announcement } from "../announcement";
 import ContactForm from "../contact-form";
-import Exclusives from "../exclusives";
-import { Features } from "../features";
+// import Exclusives from "../exclusives";
+// import { Features } from "../features";
 import Hero_ from "../hero_";
 // import Hero from "../hero";
 import News from "../news";

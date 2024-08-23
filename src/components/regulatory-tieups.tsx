@@ -1,6 +1,6 @@
-import Autoplay from "embla-carousel-autoplay";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
-import { cn } from "@/lib/utils";
+// import Autoplay from "embla-carousel-autoplay";
+// import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+// import { cn } from "@/lib/utils";
 import Marquee from "react-fast-marquee";
 
 const tieups = ["Dfsa1.png", "ib1.png", "uqudo1.png", "ir1.png", "sp1.png", "six1.png"];

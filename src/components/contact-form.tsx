@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
+// import { Input } from "./ui/input";
+// import { Label } from "./ui/label";
 import '../styles/contact-form.css'
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 

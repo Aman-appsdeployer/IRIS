@@ -1,4 +1,4 @@
-import { ReactNode, Fragment } from "react";
+import { ReactNode, Fragment, useState, useEffect } from "react";
 import clsx from "clsx";
 import { Globe, Menu, X } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
@@ -12,7 +12,8 @@ import {
     SelectValue,
 } from "./ui/select";
 import { cn } from "@/lib/utils";
-import AppDownlaod from "./app-downlaod";
+// import AppDownlaod from "./app-downlaod";
+import { Link, useLocation } from "react-router-dom";
 
 function MobileNavItem({
     href,
@@ -148,48 +149,90 @@ function MobileNavigation() {
 function NavItem({
     href,
     children,
-    disabled,
+    isActive,
+    onClick,
 }: {
     href: string;
     children: ReactNode;
-    disabled?: boolean;
+    isActive: boolean;
+    onClick: () => void;
 }) {
     return (
-        <li className={cn({ "pointer-events-none text-muted": disabled })}>
-            <a
-                href={href}
+        <li onClick={onClick}>
+            <Link
+                to={href}
                 className={clsx(
-                    "relative block px-3 py-2 transition hover:text-primary"
+                    "relative block px-3 py-2 transition text-[#F5DEB3] ",
+                    isActive ? "bg-[#F5DEB3] text-black" : "bg-black text-[#F5DEB3]"
                 )}
             >
                 {children}
-            </a>
+            </Link>
         </li>
     );
 }
 
+
 function DesktopNavigation() {
+    const location = useLocation();
+    const [activeTab, setActiveTab] = useState<string>(location.pathname);
+
+    useEffect(() => {
+        setActiveTab(location.pathname);
+    }, [location.pathname]);
+
     return (
         <nav className="pointer-events-auto hidden md:block">
-            <ul className="flex items-center font-sans whitespace-nowrap rounded-full px-3 text-[0.95rem] font-semibold shadow-2xl dark:shadow-xl dark:shadow-white/5 ring-1 ring-zinc-900/5 bg-background">
-                <NavItem href="/">Home</NavItem>
-                <NavItem href="/advisory">Advisory</NavItem>
-                {/* <NavItem href="/faqs">FAQ's</NavItem> */}
-                <NavItem href="/prive">Prive</NavItem>
-                <NavItem href="/iris">IRIS</NavItem>
-                <NavItem href="/ethosphere">Ethosphere</NavItem>
+            <ul className="flex items-center font-sans whitespace-nowrap rounded-full px-3 text-[0.95rem] font-semibold shadow-2xl dark:shadow-xl dark:shadow-white/5 ring-1 ring-zinc-900/5 bg-background bg-black">
+            
+                <NavItem
+                    href="/"
+                    isActive={activeTab === "/"}
+                    onClick={() => setActiveTab("/")}
+                >
+                    Home
+                </NavItem>
+                <NavItem
+                    href="/advisory"
+                    isActive={activeTab === "/advisory"}
+                    onClick={() => setActiveTab("/advisory")}
+                >
+                    Advisory
+                </NavItem>
+                <NavItem
+                    href="/prive"
+                    isActive={activeTab === "/prive"}
+                    onClick={() => setActiveTab("/prive")}
+                >
+                    Prive
+                </NavItem>
+                <NavItem
+                    href="/iris"
+                    isActive={activeTab === "/iris"}
+                    onClick={() => setActiveTab("/iris")}
+                >
+                    IRIS
+                </NavItem>
+                <NavItem
+                    href="/ethosphere"
+                    isActive={activeTab === "/ethosphere"}
+                    onClick={() => setActiveTab("/ethosphere")}
+                >
+                    Ethosphere
+                </NavItem>
             </ul>
         </nav>
     );
 }
 
+
 function Home() {
     return (
-        <div className="pt-4">
+        <div className="">
             <a href="/" aria-label="Home" className="pointer-events-auto">
                 <img
                     src="/logo.png"
-                    className="rounded-md h-12 w-25 p-2 object-contain"
+                    className="rounded-md h-12 w-24 object-contain"
                     alt="Nuqi Logo"
                 />
             </a>
@@ -198,19 +241,28 @@ function Home() {
 }
 
 export function Navbar() {
+    const [activeCountry, setActiveCountry] = useState<string>("uae");
+    const handleCountryChange = (country: string) => {
+        setActiveCountry(country);
+        if (country === "india") {
+            // window.location.href = "https://in.nuqiwealth.com/";
+        } else {
+            // window.location.href = "https://uae.nuqiwealth.com/";
+        }
+    };
     return (
         <div className="z-50 w-full fixed backdrop-blur-2xl">
             <header className=" relative z-50 container">
-                <div className="relative flex gap-4 items-center">
+                <div className="relative flex gap-4 items-center py-4">
                     <div className=" relative flex flex-1">
                         <Home />
                     </div>
-                    <div className="flex flex-1 justify-end md:justify-center pt-8">
+                    <div className="flex flex-1 justify-end md:justify-center ">
                         <MobileNavigation />
                         <DesktopNavigation />
                     </div>
-                    <div className="justify-end hidden md:flex md:flex-1 items-center gap-4 pt-8">
-                        <Select
+                    <div className="justify-end hidden md:flex md:flex-1 items-center gap-4 ">
+                        {/* <Select
                             defaultValue="uae"
                             onValueChange={(value) => {
                                 if (value === "india") {
@@ -241,8 +293,30 @@ export function Navbar() {
                                     />
                                 </SelectItem>
                             </SelectContent>
-                        </Select>
-                        <AppDownlaod />
+                        </Select> */}
+                        <div className="flex">
+                            <div
+                                onClick={() => handleCountryChange("india")}
+                                className={`flex ps-2 cursor-pointer font-bold rounded-sm ${activeCountry === "india" ? 'bg-[#F5DEB3] text-black' : 'text-[#f8b539]'}`}
+                            >
+                                <p>India </p>
+                                <img
+                                    className="max-w-6 mx-2 object-contain"
+                                    src="/india.jpg"
+                                />
+                            </div>
+                            <div
+                                onClick={() => handleCountryChange("uae")}
+                                className={`flex ps-2 cursor-pointer font-bold rounded-sm ${activeCountry === "uae" ? 'bg-[#F5DEB3] text-black' : 'text-[#f8b539]'}`}
+                            >
+                                <p>UAE </p>
+                                <img
+                                    className="max-w-6 mx-2 object-contain"
+                                    src="/uae.jpg"
+                                />
+                            </div>
+                        </div>
+                        {/* <AppDownlaod /> */}
                     </div>
                 </div>
             </header>

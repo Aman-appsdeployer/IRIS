@@ -12,12 +12,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
     description,
 }) => {
     return (
-        <div className="md:aspect-square flex flex-col p-4 text-center gap-2">
+        <div className="md:aspect-square flex flex-col py-4 text-center gap-2">
             <div className="aspect-square flex justify-center items-center mx-auto max-w-20">
-                <img src={src} className="" />
+                <img src={src} className="w-10" />
             </div>
-            <span className="font-semibold text-base pt-6">{heading}</span>
-            <span className="tracking-tight text-sm">{description}</span>
+            <span className="font-semibold text-base pt-6 text-[#F5DEB3]">{heading}</span>
+            <span className="tracking-tight text-sm text-[#b4b3b3]">{description}</span>
         </div>
     );
 };

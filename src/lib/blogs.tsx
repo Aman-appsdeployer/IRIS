@@ -258,7 +258,7 @@
 export const blogs = [
     {
         id: "1st",
-        image: "blog-1.jpg",
+        image: "/etho/01.jpg",
         heading: "NUQI 2024 Ethosphere : 1st Edition",
         description: `It's worth the esports`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-1st-Edition.pdf",
@@ -339,7 +339,7 @@ export const blogs = [
     },
     {
         id: "2nd",
-        image: "blog-1.jpg",
+        image: "/etho/02.jpg",
         heading: "NUQI 2024 Ethosphere : 2nd Edition",
         description: `What is the secret of american growth?`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-2nd-Edition.pdf",
@@ -420,7 +420,7 @@ export const blogs = [
     },
     {
         id: "3rd",
-        image: "blog-1.jpg",
+        image: "/etho/03.jpg",
         heading: "NUQI 2024 Ethosphere : 3rd Edition",
         description: `In the banking sector, big is powerful`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-3rd-Edition.pdf",
@@ -501,7 +501,7 @@ export const blogs = [
     },
     {
         id: "4th",
-        image: "blog-1.jpg",
+        image: "/etho/04.jpg",
         heading: "NUQI 2024 Ethosphere : 4th Edition",
         description: `Gold or The Dollar: Which will be stronger?`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-4th-Edition.pdf",
@@ -582,7 +582,7 @@ export const blogs = [
     },
     {
         id: "5th",
-        image: "blog-1.jpg",
+        image: "/etho/03.jpg",
         heading: "NUQI 2024 Ethosphere : 5th Edition",
         description: `In the banking sector, Big is powerful`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-5th-Edition.pdf",
@@ -663,7 +663,7 @@ export const blogs = [
     },
     {
         id: "6th",
-        image: "blog-1.jpg",
+        image: "/etho/06.png",
         heading: "NUQI 2024 Ethosphere : 6th Edition",
         description: `The thaw emerging markets, at last? `,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-6th-Edition.pdf",
@@ -744,7 +744,7 @@ export const blogs = [
     },
     {
         id: "7th",
-        image: "blog-1.jpg",
+        image: "/etho/07.WEBP",
         heading: "NUQI 2024 Ethosphere : 7th Edition",
         description: `Which investors will have a sailor's mindset?`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-7th-Edition.pdf",
@@ -825,7 +825,7 @@ export const blogs = [
     },
     {
         id: "8th",
-        image: "blog-1.jpg",
+        image: "/etho/08.jpg",
         heading: "NUQI 2024 Ethosphere : 8th Edition",
         description: `In the kingdom, It's better to be united when investing`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-8th-Edition.pdf",
@@ -906,7 +906,7 @@ export const blogs = [
     },
     {
         id: "9th",
-        image: "blog-1.jpg",
+        image: "/etho/09.jpg",
         heading: "NUQI 2024 Ethosphere : 9th Edition",
         description: `Optimism has led to Euphoria`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-9th-Edition.pdf",
@@ -987,7 +987,7 @@ export const blogs = [
     },
     {
         id: "10th",
-        image: "blog-1.jpg",
+        image: "/etho/10.jpg",
         heading: "NUQI 2024 Ethosphere : 10th Edition",
         description: `France dissolves it's Parliment and Assets`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-10th-Edition.pdf",
@@ -1068,7 +1068,7 @@ export const blogs = [
     },
     {
         id: "11th",
-        image: "blog-1.jpg",
+        image: "/etho/11.jpg",
         heading: "NUQI 2024 Ethosphere : 11th Edition",
         description: `Simmering Currencies could reach boiling Point`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-11th-Edition.pdf",
@@ -1149,7 +1149,7 @@ export const blogs = [
     },
     {
         id: "12th",
-        image: "blog-1.jpg",
+        image: "/etho/12.jpg",
         heading: "NUQI 2024 Ethosphere : 12th Edition",
         description: `The Magnificent eighth is in Great Demand`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-12th-Edition.pdf",
@@ -1230,7 +1230,7 @@ export const blogs = [
     },
     {
         id: "13th",
-        image: "blog-1.jpg",
+        image: "/etho/13.jpg",
         heading: "NUQI 2024 Ethosphere : 13th Edition",
         description: `Is it time to consider European Equities again?`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-13th-Edition.pdf",
@@ -1311,7 +1311,7 @@ export const blogs = [
     },
     {
         id: "14th",
-        image: "blog-1.jpg",
+        image: "/etho/14.jpg",
         heading: "NUQI 2024 Ethosphere : 14th Edition",
         description: `Rate Cuts: Which assets will Benefit most?`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-14th-Edition.pdf",
@@ -1392,7 +1392,7 @@ export const blogs = [
     },
     {
         id: "15th",
-        image: "blog-1.jpg",
+        image: "/etho/15.jpg",
         heading: "NUQI 2024 Ethosphere : 15th Edition",
         description: `The Trump trade has not said it's last Word`,
         path: "https://nuqiwealth.com/pdf/NUQI-2024-Ethosphere-15th-Edition.pdf",

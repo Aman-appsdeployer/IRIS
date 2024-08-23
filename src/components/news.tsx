@@ -6,10 +6,10 @@ const News = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-primary/25 pt-12">
+        <div className="bg-black pt-12">
             <div className="flex flex-col gap-8 pb-12 items-center justify-center antialiased conatiner">
                 <div>
-                    <h1 className="text-3xl font-black font-sans tracking-tighter md:text-3xl container text-center">
+                    <h1 className="text-3xl text-[#F5DEB3] font-sans tracking-tighter md:text-3xl container text-center">
                         Nuqi in the news
                     </h1>
                 </div>

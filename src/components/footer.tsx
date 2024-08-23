@@ -34,15 +34,16 @@ export const Logo = (props: LucideProps) => {
 
 const Waves = () => {
     return (
-        <div className="relative -z-50 overflow-hidden h-48 md:h-64 lg:h-96 w-full">
-            <img
+        <div className="relative -z-50 overflow-hidden 
+        ">
+            {/* <img
                 src="/waves-1.png"
                 className="absolute bottom-0 translate-y-1/2 w-full"
             />
             <img
                 src="/waves-2.png"
                 className="absolute bottom-0 translate-y-1/2 w-full"
-            />
+            /> */}
         </div>
     );
 };
@@ -51,7 +52,7 @@ export function Footer() {
     return (
         <>
             <Waves />
-            <footer className="bg-[#333c49] text-white">
+            <footer className="bg-[#000] text-white">
                 <div className="py-10 container">
                     <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
                         <div className="text-white flex flex-col gap-2 items-center">
@@ -136,7 +137,7 @@ export function Footer() {
                         </p> */}
                         {/* <p>Singapore: 33A, Pagoda Street, Singapore (059192)</p> */}
                     </div>
-                    <div className="flex flex-col items-center justify-between gap-6 sm:flex-row text-center text-primary/50 text-xs p-4">
+                    <div className="flex flex-col items-center justify-between gap-6 sm:flex-row text-center text-white/70 text-xs p-4">
                         <p>
                             © 2023 Nuqi Digital Wealth Limited. All rights
                             reserved. <br />

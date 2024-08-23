@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 const exclusives = [
     {
-        title: "Global Portfolios with IBKR",
+        title: "Global Portfolios ",
         description:
-            "Expand your investment horizon globally with our partnership with IBKR, ensuring a diversified portfolio tailored to your needs.            ",
+            "Expand your investment horizon globally with our partnership, ensuring a diversified portfolio tailored to your needs.",
         image: "/exclusives/trading.png",
     },
     /*{

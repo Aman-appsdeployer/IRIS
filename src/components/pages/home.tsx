@@ -18,8 +18,8 @@ const Home = () => {
             {/* <Press /> */}
             {/* <Download /> */}
             {/* <Portfolio /> */}
-            <News />
             <Exclusives />
+            <News />
             <ContactForm />
         </div>
     );

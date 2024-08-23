@@ -90,6 +90,10 @@
   src: url('./assets/fonts/sf-pro-display//SFPRODISPLAYREGULAR.OTF') format('truetype');
 }
 
+body{
+    background-color: #fff;
+}
+
 .abtWrap {
     display: flex;
     align-items: flex-end;

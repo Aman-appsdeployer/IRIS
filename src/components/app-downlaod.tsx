@@ -31,8 +31,8 @@ const AppDownlaod = () => {
                     </DialogDescription>
                 </DialogHeader>
                 <div className="flex flex-wrap content-center items-center justify-between px-5">
-                    <GooglePlay className="cursor-pointer w-36 md:w-48" />
-                    <AppStore className="cursor-pointer w-36 md:w-48" />
+                    <GooglePlay />
+                    <AppStore />
                 </div>
             </DialogContent>
         </Dialog>

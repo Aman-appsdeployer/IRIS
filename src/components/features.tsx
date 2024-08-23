@@ -50,10 +50,10 @@ export function Features() {
         <div className="bg-black">
             <div className="flex flex-col gap-8 py-12 mt-6 md:mt-16 items-center justify-center antialiased container">
                 <div>
-                    <h1 className="text-3xl text-[#F5DEB3] font-bold font-sans tracking-tighter md:text-3xl text-center">
+                    <h1 className="text-3xl text-[#F5DEB3] font-bold   tracking-tighter md:text-3xl text-center">
                         Features
                     </h1>
-                    <h2 className="text-xl font-bold font-sans tracking-tighter md:text-xl text-center text-[#F5DEB3]">
+                    <h2 className="text-xl font-bold   tracking-tighter md:text-xl text-center text-[#F5DEB3]">
                         What{" "}
                         <span className="text-[#F5DEB3] tracking-normal text-2xl px-1">
                             <span className="font-extrabold">Nuqi</span>

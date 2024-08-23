@@ -41,7 +41,7 @@ const ContactForm = () => {
     return (
         <div className="flex flex-col gap-8  py-12 pb-12 items-center justify-center antialiased">
             <div>
-                <h1 className="text-2xl font-black font-sans tracking-tighter md:text-3xl container text-center mb-5">
+                <h1 className="text-2xl font-black   tracking-tighter md:text-3xl container text-center mb-5">
                     {/* Begin your Journey. <br /> <span className="md:text-2xl text-xl"> Start a Conversation</span> */}
                     {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#dbc7a6] via-[#3d4957] to-[#282e3a] tracking-normal px-1">
                         <span className="font-extrabold">Journey</span>

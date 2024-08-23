@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, createContext, useContext } from "react";
+import  { useEffect, useRef, useState, createContext, useContext } from "react";
 import { IconArrowNarrowLeft, IconArrowNarrowRight, IconX } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useOutsideClick } from "../hooks/use-outside-click";
@@ -185,7 +185,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl mx-auto bg-white dark:bg-neutral-900 h-fit z-[60] my-10 md:p-10 rounded-3xl font-sans relative"
+              className="max-w-5xl mx-auto bg-white dark:bg-neutral-900 h-fit z-[60] my-10 md:p-10 rounded-3xl   relative"
             >
               <button
                 className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center mb-2"
@@ -212,36 +212,39 @@ export const Card = ({
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-4">
           <div className=" flex flex-row  justify-between items-start">
-            <motion.p
+            {/* <motion.p
               layoutId={layout ? `title-${card.edition}` : undefined}
-              className="text-white text-xs md:text-xs font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+              className="text-white text-xs md:text-xs font-semibold max-w-xs text-left [text-wrap:balance] bg-black  p-1 rounded-lg  mt-2"
             >
               {card.date}
-            </motion.p>
+            </motion.p> */}
+            
             <motion.p
               layoutId={layout ? `category-${card.edition}` : undefined}
-              className="text-white  text-xs  font-medium font-sans bg-white bg-opacity-20 backdrop-blur-lg p-1 rounded-lg"
+              className="text-white  text-xs  font-medium   bg-black  p-1 rounded-lg"
             >
-              {`${card.edition} edition`}
+              
+              {`${card.edition} edition  ${card.date}`}
             </motion.p>
 
           </div>
-          <motion.p
+          {/* <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-xs md:text-sm font-bold max-w-xs text-left  font-sans mt-2"
+            className="text-white text-xs md:text-sm font-bold max-w-xs text-left    mt-2"
           >
             {card.title}
-          </motion.p>
+          </motion.p> */}
+          <div className="flex flex-row items-center justify-center">
           <motion.p
             layoutId={layout ? `title-${card.edition}` : undefined}
-            className="text-white text-xs md:text-xs font-semibold  text-left  font-sans mt-2"
+            className="text-white text-xs md:text-sm font-normal  text-left    mt-2"
           >
             {card.description}
           </motion.p>
-
+          </div>
           <motion.p
             layoutId={layout ? `title-${card.edition}` : undefined}
-            className="text-white text-xs md:text-xs font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-xs md:text-xs font-extralight max-w-xs text-left [text-wrap:balance]   mt-2"
           >
             Read More
           </motion.p>

@@ -18,7 +18,7 @@ import {Hnis} from "./components/pages/hnis";
 
 const App = () => {
     return (
-        <div className="min-h-screen font-sans text-foreground">
+        <div className="min-h-screen   text-foreground">
             <Routes>
                 <Route element={<RootLayout />}>
                     <Route index element={<Home />} />
@@ -43,3 +43,8 @@ const App = () => {
 };
 
 export default App;
+
+//text-lg card heading
+//text-sm card details
+//
+//

@@ -105,12 +105,12 @@ function MobileNavigation() {
                                 >
                                     <X className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
                                 </Popover.Button>
-                                {/* <h2 className="text-sm font-sans font-bold text-zinc-600 dark:text-zinc-400">
+                                {/* <h2 className="text-sm   font-bold text-zinc-600 dark:text-zinc-400">
                                 Navigation
                             </h2> */}
                             </div>
                             <nav className="mt-6">
-                                <ul className="-my-2 font-sans font-bold divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                                <ul className="-my-2   font-bold divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                                     <MobileNavItem href="/">Home</MobileNavItem>
                                     <MobileNavItem href="/advisory">
                                         Advisory
@@ -182,8 +182,12 @@ function DesktopNavigation() {
     }, [location.pathname]);
 
     return (
-        <nav className="pointer-events-auto hidden md:block">
-            <ul className="flex items-center font-sans whitespace-nowrap rounded-full px-3 text-[0.95rem] font-semibold shadow-2xl dark:shadow-xl dark:shadow-white/5 ring-1 ring-zinc-900/5 bg-background bg-black">
+        <nav className="relative pointer-events-auto hidden md:block">
+                {activeTab == '/ethosphere' && <div className={`w-1/2 rounded-full absolute bg-[#F5DEB3] top-0 bottom-0 right-0 `}></div>}
+            {activeTab == '/' && <div className={`w-1/2 absolute rounded-full bg-[#F5DEB3] top-0 bottom-0 left-0 `}></div>}
+
+
+            <ul className="flex items-center  whitespace-nowrap rounded-full px-3 text-[0.95rem] font-semibold shadow-2xl dark:shadow-xl dark:shadow-white/5 ring-1 ring-zinc-900/5 bg-background bg-black">
             
                 <NavItem
                     href="/"

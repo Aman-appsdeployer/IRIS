@@ -32,7 +32,7 @@ const BasketDialog: React.FC<BasketDialogProps> = ({
         <Dialog>
             <DialogTrigger asChild>
                 <button
-                    className="flex items-center gap-2 px-1 py-2 font-sans text-xs font-bold text-center align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-slate-500/10 active:bg-gray-900/20"
+                    className="flex items-center gap-2 px-1 py-2   text-xs font-bold text-center align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-slate-500/10 active:bg-gray-900/20"
                     type="button"
                 >
                     Learn More

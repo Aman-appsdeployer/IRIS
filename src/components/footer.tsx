@@ -89,7 +89,7 @@ export function Footer() {
                             </div>
                         </div>
                         <div className="flex gap-24 md:pr-10">
-                            <div className="hidden md:flex flex-col gap-2 text-xs font-sans max-w-40 text-primary">
+                            <div className="hidden md:flex flex-col gap-2 text-xs   max-w-40 text-primary">
                                 <p>
                                     UAE: : Office 501, 05th FLoor, Innovation
                                     One, DIFC, Dubai, UAE
@@ -103,7 +103,7 @@ export function Footer() {
                                     (059192)
                                 </p> */}
                             </div>
-                            <div className="flex flex-col gap-2 text-md font-semibold font-sans">
+                            <div className="flex flex-col gap-2 text-md font-semibold  ">
                                 <NavLink href="/advisory">Advisory</NavLink>
                                 <NavLink href="/about">About Us</NavLink>
                                 <NavLink href="/faqs">FAQ's</NavLink>
@@ -112,7 +112,7 @@ export function Footer() {
                                     IRIS
                                 </NavLink>
                             </div>
-                            <div className="flex flex-col gap-2 text-md font-semibold font-sans">
+                            <div className="flex flex-col gap-2 text-md font-semibold  ">
                                 <NavLink href="/press">Media</NavLink>
                                 <NavLink href="/contact">Contact Us</NavLink>
                                 <NavLink href="/privacy">
@@ -126,7 +126,7 @@ export function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex md:hidden flex-col gap-2 text-xs font-sans text-primary text-center py-6">
+                    <div className="flex md:hidden flex-col gap-2 text-xs   text-primary text-center py-6">
                         <p>
                             UAE: Innovation Hub One, 05th Floor, Office nos 501,
                             DIFC, Dubai, UAE

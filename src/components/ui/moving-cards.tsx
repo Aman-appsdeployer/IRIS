@@ -105,7 +105,7 @@ export const InfiniteMovingCards = ({
                                 />
                                 <div className="flex w-full flex-col gap-0.5">
                                     <div className="flex items-center justify-between pr-3">
-                                        <h5 className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                        <h5 className="block   text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                                             {item.name}
                                         </h5>
                                         <a
@@ -115,13 +115,13 @@ export const InfiniteMovingCards = ({
                                             <LinkedinIcon className="size-5 hover:text-primary" />
                                         </a>
                                     </div>
-                                    <p className="block font-sans text-base antialiased font-semibold leading-relaxed text-blue-gray-900">
+                                    <p className="block   text-base antialiased font-semibold leading-relaxed text-blue-gray-900">
                                         {item.designation}
                                     </p>
                                 </div>
                             </div>
                             <div className="p-0 mb-6">
-                                <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                                <p className="block   text-base antialiased font-light leading-relaxed text-inherit">
                                     {item.description}
                                 </p>
                             </div>

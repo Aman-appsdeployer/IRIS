@@ -11,7 +11,7 @@ const RegulatoryTieups = () => {
         <div className="flex flex-col gap-8 px-14 py-12 items-center justify-center antialiased container">
             <div className="flex flex-col justify-between items-center w-full">
                 <div className="flex flex-col gap-4 mb-16">
-                    <h1 className="text-3xl font-black font-sans text-center tracking-tighter md:text-3xl">
+                    <h1 className="text-3xl font-black   text-center tracking-tighter md:text-3xl">
                         Building trust through collaboration
                     </h1>
                     <p className="text-center">

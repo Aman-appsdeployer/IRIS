@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 const Portfolio = () => {
     return (
         <div className="flex flex-col gap-8 pb-12 items-center justify-center antialiased container">
-            <h1 className="text-3xl font-black font-sans tracking-tighter md:text-3xl text-center">
+            <h1 className="text-3xl font-black   tracking-tighter md:text-3xl text-center">
                 Featured Portfolio
             </h1>
             <div className="grid md:grid-cols-3 gap-4 md:gap-8">

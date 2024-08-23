@@ -1,10 +1,10 @@
 const Screening = () => (
     <div className="mb-12">
         <div className="container">
-            <h1 className="text-3xl font-black font-sans tracking-tighter md:text-3xl text-center">
+            <h1 className="text-3xl font-black   tracking-tighter md:text-3xl text-center">
                 Rigorous Screenings
             </h1>
-            <h2 className="text-xl font-semibold font-sans tracking-tighter md:text-xl text-center py-2 text-secondary">
+            <h2 className="text-xl font-semibold   tracking-tighter md:text-xl text-center py-2 text-secondary">
                 Our <span className="text-primary">halal investments</span> are
                 structured in accordance with the strictest Islamic principles
             </h2>

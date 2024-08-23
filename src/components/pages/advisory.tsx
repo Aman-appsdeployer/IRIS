@@ -1,11 +1,13 @@
+import '../../styles/googleAppleBtn.css'
 export const GooglePlay = (props: LucideProps) => (
     <a
         href={
             "https://play.google.com/store/apps/details?id=com.nuqi.nuqi_wealth_app"
         }
         target="_blank"
+        className='playstore-button'
     >
-        <svg
+        {/* <svg
             width="223"
             height="67"
             viewBox="0 0 223 67"
@@ -90,7 +92,21 @@ export const GooglePlay = (props: LucideProps) => (
                 d="M112.549 36.4355C108.669 36.4355 105.5 39.4295 105.5 43.5605C105.5 47.658 108.669 50.6834 112.549 50.6834C116.437 50.6834 119.606 47.658 119.606 43.5605C119.606 39.4295 116.437 36.4355 112.549 36.4355ZM112.549 47.8778C110.42 47.8778 108.589 46.096 108.589 43.5605C108.589 40.9915 110.42 39.2411 112.549 39.2411C114.678 39.2411 116.517 40.9915 116.517 43.5605C116.517 46.096 114.678 47.8778 112.549 47.8778ZM97.1681 36.4355C93.2801 36.4355 90.1188 39.4295 90.1188 43.5605C90.1188 47.658 93.2801 50.6834 97.1681 50.6834C101.054 50.6834 104.217 47.658 104.217 43.5605C104.217 39.4295 101.054 36.4355 97.1681 36.4355ZM97.1681 47.8778C95.0372 47.8778 93.1995 46.096 93.1995 43.5605C93.1995 40.9915 95.0372 39.2411 97.1681 39.2411C99.2969 39.2411 101.128 40.9915 101.128 43.5605C101.128 46.096 99.2969 47.8778 97.1681 47.8778ZM78.8656 38.6192V41.6468H85.9954C85.7868 43.3386 85.2293 44.5822 84.3745 45.4491C83.3338 46.4959 81.713 47.658 78.8656 47.658C74.4779 47.658 71.042 44.0672 71.042 39.618C71.042 35.1687 74.4779 31.578 78.8656 31.578C81.2381 31.578 82.9642 32.5181 84.2382 33.7366L86.3423 31.6031C84.5603 29.8778 82.1899 28.5525 78.8656 28.5525C72.8487 28.5525 67.792 33.5168 67.792 39.618C67.792 45.7192 72.8487 50.6834 78.8656 50.6834C82.1177 50.6834 84.5603 49.6031 86.4806 47.5763C88.4484 45.581 89.0616 42.7753 89.0616 40.5099C89.0616 39.8064 89.0038 39.1594 88.9006 38.6192H78.8656ZM153.707 40.9663C153.127 39.373 151.336 36.4355 147.69 36.4355C144.077 36.4355 141.068 39.3227 141.068 43.5605C141.068 47.5512 144.046 50.6834 148.037 50.6834C151.264 50.6834 153.127 48.6881 153.893 47.5261L151.497 45.9076C150.698 47.0927 149.61 47.8778 148.037 47.8778C146.474 47.8778 145.353 47.1513 144.634 45.7192L154.031 41.7766L153.707 40.9663ZM144.126 43.3386C144.046 40.5916 146.23 39.1846 147.795 39.1846C149.022 39.1846 150.062 39.8064 150.409 40.6962L144.126 43.3386ZM136.488 50.25H139.577V29.3125H136.488V50.25ZM131.43 38.0225H131.326C130.633 37.1892 129.309 36.4355 127.632 36.4355C124.114 36.4355 120.897 39.5677 120.897 43.5835C120.897 47.5763 124.114 50.6834 127.632 50.6834C129.309 50.6834 130.633 49.9234 131.326 49.065H131.43V50.0867C131.43 52.8107 129.995 54.2742 127.68 54.2742C125.793 54.2742 124.622 52.8923 124.139 51.7303L121.452 52.8672C122.227 54.7558 124.277 57.0798 127.68 57.0798C131.302 57.0798 134.357 54.9191 134.357 49.6617V36.8689H131.43V38.0225ZM127.897 47.8778C125.768 47.8778 123.986 46.0709 123.986 43.5835C123.986 41.0731 125.768 39.2411 127.897 39.2411C129.995 39.2411 131.648 41.0731 131.648 43.5835C131.648 46.0709 129.995 47.8778 127.897 47.8778ZM168.169 29.3125H160.781V50.25H163.862V42.3168H168.169C171.59 42.3168 174.946 39.8064 174.946 35.8136C174.946 31.8229 171.582 29.3125 168.169 29.3125ZM168.249 39.4044H163.862V32.2249H168.249C170.55 32.2249 171.863 34.1617 171.863 35.8136C171.863 37.4342 170.55 39.4044 168.249 39.4044ZM187.293 36.3957C185.067 36.3957 182.753 37.3923 181.801 39.6012L184.535 40.7632C185.123 39.6012 186.205 39.2243 187.349 39.2243C188.947 39.2243 190.568 40.1979 190.593 41.9169V42.1367C190.035 41.8101 188.842 41.3265 187.374 41.3265C184.429 41.3265 181.429 42.9701 181.429 46.0374C181.429 48.843 183.841 50.6499 186.552 50.6499C188.625 50.6499 189.769 49.7015 190.487 48.5981H190.593V50.2165H193.568V42.1849C193.568 38.4727 190.834 36.3957 187.293 36.3957ZM186.921 47.8694C185.914 47.8694 184.51 47.3627 184.51 46.096C184.51 44.4755 186.261 43.8536 187.776 43.8536C189.133 43.8536 189.769 44.1572 190.593 44.5571C190.351 46.4959 188.705 47.8694 186.921 47.8694ZM204.408 36.8542L200.867 45.9306H200.762L197.101 36.8542H193.779L199.279 49.5381L196.141 56.5962H199.36L207.836 36.8542H204.408ZM176.639 50.25H179.728V29.3125H176.639V50.25Z"
                 fill="#000"
             />
+        </svg> */}
+        <svg
+            viewBox="0 0 512 512"
+            className="icon"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
+            ></path>
         </svg>
+        <span className="texts">
+            <span className="text-1">GET IT ON</span>
+            <span className="text-2">Google Play</span>
+        </span>
     </a>
 );
 
@@ -101,8 +117,9 @@ export const AppStore = (props: LucideProps) => {
                 "https://apps.apple.com/ae/app/nuqi-wealth/id6467738605"
             }
             target="_blank"
+            className="playstore-button"
         >
-            <svg
+            {/* <svg
                 width="226"
                 height="67"
                 viewBox="0 0 226 67"
@@ -210,19 +227,75 @@ export const AppStore = (props: LucideProps) => {
                     d="M204.498 43.972C204.498 44.6119 204.456 45.1512 204.368 45.5917H193.66C193.702 47.1796 194.219 48.394 195.214 49.2315C196.116 49.9802 197.283 50.3554 198.716 50.3554C200.301 50.3554 201.748 50.1025 203.048 49.595L203.608 52.074C202.088 52.7373 200.293 53.0673 198.222 53.0673C195.731 53.0673 193.776 52.3336 192.353 50.868C190.933 49.4024 190.222 47.4342 190.222 44.9653C190.222 42.5416 190.883 40.5232 192.207 38.9135C193.593 37.195 195.467 36.3357 197.824 36.3357C200.139 36.3357 201.892 37.195 203.082 38.9135C204.024 40.2786 204.498 41.967 204.498 43.972ZM201.095 43.0457C201.118 41.9871 200.886 41.0726 200.402 40.3004C199.784 39.3071 198.835 38.8113 197.558 38.8113C196.391 38.8113 195.442 39.2954 194.717 40.2669C194.122 41.0391 193.769 41.9654 193.66 43.0441H201.095V43.0457Z"
                     fill="#000"
                 />
-            </svg>
+            </svg> */}
+            <span className="icon">
+                <svg
+                    fill="currentcolor"
+                    viewBox="-52.01 0 560.035 560.035"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655"
+                        ></path>
+                    </g>
+                </svg>
+            </span>
+            <span className="texts">
+                <span className="text-1">Download form</span>
+                <span className="text-2">App store</span>
+            </span>
         </a>
     );
 };
 
-import { DollarSignIcon, IndianRupeeIcon, LucideProps } from "lucide-react";
+import { LucideProps } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 // import MeteorsCard from "../ui/meteor-card";
-import BlackCard from "../ui/blackCard";
+// import BlackCard from "../ui/blackCard";
 import '../../styles/advisory.css'
+import AdvisoryCard from "../ui/advisoryCard";
 
 const Advisory = () => {
+    const cardData = [
+        {
+            title: "Entrenched enterprises",
+            description:
+                "Entrenched Enterprises offers a selection of established companies with strong market presence and proven track records. These stocks represent stable and reliable investments in well-established industries.",
+            icon: "cyber",
+            basket: "global",
+        },
+        {
+            title: "Income Generators",
+            description:
+                "Income Generators focuses on dividend-paying stocks known for their consistent income generation. These stocks provide investors with steady cash flow and potential for long-term wealth accumulation.",
+            icon: "smart",
+            basket: "global",
+        },
+        {
+            title: "Artificial Intelligence",
+            description:
+                "Artificial Intelligence comprises stocks of companies at the forefront of AI technology development. These innovative companies leverage AI to drive growth, efficiency, and disruption in various sectors.",
+            icon: "fintech",
+            basket: "global",
+        },
+        {
+            title: "60 40 Portfolios (ETFs)",
+            description:
+                "The 60/40 Portfolios offer a balanced approach to investment, consisting of a mix of 60% equity ETFs and 40% fixed-income ETFs. This diversified portfolio aims to provide stability and growth potential for investors.",
+            icon: "fruits",
+            basket: "global",
+        },
+    ];
+
     return (
         <section className="py-10 sm:py-16 lg:py-20">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -276,19 +349,19 @@ const Advisory = () => {
                 </div>
                 <div className="py-12 text-secondary">
                     <h1
-                        className="text-2xl font-bold font-sans tracking-tighter md:text-3xl text-center py-2"
+                        className="text-2xl font-bold   tracking-tighter md:text-3xl text-center py-2"
                         id="global"
                     >
                         Nuqi Global CEP (Curated Equity Portfolios)
                     </h1>
-                    <h2 className="text-lg font-semibold font-sans tracking-tighter md:text-xl text-center">
+                    <h2 className="text-lg font-semibold   tracking-tighter md:text-xl text-center">
                         Our Nuqi Global Basket offers a variety of curated
                         investment themes, each catering to specific risk
                         appetite and investment goals:
                     </h2>
                 </div>
-                <div className="flex flex-row flex-wrap gap-4 justify-center">
-                    {/* <MeteorsCard
+                {/* <div className="flex flex-row flex-wrap gap-4 justify-center"> */}
+                {/* <MeteorsCard
                         title="Entrenched enterprises"
                         descritption="Entrenched Enterprises offers a selection of established companies with strong market presence and proven track records. These stocks represent stable and reliable investments in well-established industries."
                         icon="cyber"
@@ -316,14 +389,14 @@ const Advisory = () => {
                         basket="global"
                         index={3}
                     /> */}
-                    {/* <MeteorsCard
+                {/* <MeteorsCard
                         title="60 40 Portfolios (ETFs)"
                         descritption="The 60/40 Portfolios offer a balanced approach to investment, consisting of a mix of 60% equity ETFs and 40% fixed-income ETFs. This diversified portfolio aims to provide stability and growth potential for investors."
                         icon="fruits"
                         basket="global"
                         index={3}
                     /> */}
-                    <BlackCard
+                {/* <BlackCard
                         title="Entrenched enterprises"
                         descritption="Entrenched Enterprises offers a selection of established companies with strong market presence and proven track records. These stocks represent stable and reliable investments in well-established industries."
                         icon="cyber"
@@ -336,43 +409,43 @@ const Advisory = () => {
                         icon="smart"
                         basket="global"
                         index={1}
-                    />
-                    {/* <BlackCard
+                    /> */}
+                {/* <BlackCard
                         title="Aritificial Intelligence"
                         descritption="Artificial Intelligence comprises stocks of companies at the forefront of AI technology development. These innovative companies leverage AI to drive growth, efficiency, and disruption in various sectors."
                         icon="fintech"
                         basket="global"
                         index={2}
                     /> */}
-                    {/* <BlackCard
+                {/* <BlackCard
                         title="60 40 Portfolios (ETFs)"
                         descritption="The 60/40 Portfolios offer a balanced approach to investment, consisting of a mix of 60% equity ETFs and 40% fixed-income ETFs. This diversified portfolio aims to provide stability and growth potential for investors."
                         icon="fruits"
                         basket="global"
                         index={3}
                     /> */}
-                    <div className="cards">
+                {/* <div className="cards">
                         <div className="imgs-container">
                             <div className="imgs">
-                            <div className="text px-[2.2rem] pt-[2.5rem]">
-                        <div className="flex justify-between w-full">
-                            <div className=" rounded-full flex items-center justify-center mb-2">
-                                <img src={`/baskets/fruits.png`} width={40} />
-                            </div>
-                            {"global" === "global" ? (
-                                <DollarSignIcon className="text-primary mb-4" />
-                            ) : (
-                                <IndianRupeeIcon className="text-primary mb-4" />
-                            )}
-                        </div>
-                        <h2 className="font-bold text-lg  text-[#F5DEB3] mb-2 relative">
-                        60 40 Portfolios (ETFs)
-                        </h2>
+                                <div className="text px-[1.2rem] pt-[1.5rem]">
+                                    <div className="flex justify-between w-full">
+                                        <div className=" rounded-full flex items-center justify-center mb-2">
+                                            <img src={`/baskets/fruits.png`} width={40} />
+                                        </div>
+                                        {"global" === "global" ? (
+                                            <DollarSignIcon className="text-primary mb-4" />
+                                        ) : (
+                                            <IndianRupeeIcon className="text-primary mb-4" />
+                                        )}
+                                    </div>
+                                    <h2 className="font-bold text-lg  text-[#000] mb-2 relative">
+                                        60 40 Portfolios (ETFs)
+                                    </h2>
 
-                        <p className="font-normal text-sm  text-black/80 relative">
-                        The 60/40 Portfolios offer a balanced approach to investment, consisting of a mix of 60% equity ETFs and 40% fixed-income ETFs. This diversified portfolio aims to provide stability and growth potential for investors.
-                        </p>
-                    </div>
+                                    <p className="font-normal text-sm  text-black/80 relative">
+                                        The 60/40 Portfolios offer a balanced approach to investment, consisting of a mix of 60% equity ETFs and 40% fixed-income ETFs. This diversified portfolio aims to provide stability and growth potential for investors.
+                                    </p>
+                                </div>
                             </div>
                             <div className="descriptions cards">
                                 <span className="titles font-semibold">
@@ -380,22 +453,34 @@ const Advisory = () => {
                                 </span>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div> */}
+
+                {/* </div> */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {cardData.map((card, index) => (
+                        <AdvisoryCard
+                            key={index}
+                            title={card.title}
+                            description={card.description}
+                            icon={card.icon}
+                            basket={card.basket}
+                            index={index}
+                        />
+                    ))}
                 </div>
-               
+
                 <p
-                    className="text-center mt-9 text-secondary text-lg font-bold"
+                    className="text-center mt-20 text-secondary text-lg font-bold"
                     id="downloadSection"
                 >
-                    Would you like to know more? Download Now
-                    <div className="mt-6 flex gap-6 items-center justify-center">
+                    Download Now
+                    <div className="mt-4 flex gap-6 items-center justify-center">
                         <GooglePlay className="cursor-pointer w-24 md:w-36" />
                         <AppStore className="cursor-pointer w-24 md:w-36" />
                     </div>
                 </p>
             </div>
-            
+
         </section>
     );
 };

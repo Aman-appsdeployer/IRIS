@@ -157,6 +157,9 @@ module.exports = {
               "text-slide": "text-slide 12.5s linear infinite",
               spotlight: "spotlight 2s ease .75s 1 forwards",
           },
+          screens: {
+            '824px': '824px',
+          },
       },
   },
   plugins: [require("tailwindcss-animate")],

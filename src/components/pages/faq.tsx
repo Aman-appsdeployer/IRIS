@@ -67,9 +67,9 @@ const Faq = () => {
                                 else setAccordionIndex(-1);
                             }}
                         >
-                            <p className="flex text-md font-semibold">
+                            <p className="flex text-lg font-semibold">
                                 What is Nuqi?
-                            </p>
+             </p>
 
                             {accordionIndex === 0 ? <UpArrow /> : <DownArrow />}
                         </button>
@@ -115,9 +115,8 @@ const Faq = () => {
                                 else setAccordionIndex(-1);
                             }}
                         >
-                            <span className="flex text-md font-semibold">
-                                Why invest through Nuqi?
-                            </span>
+                            <span className="flex text-lg font-semibold">
+                                Why invest through Nuq                        </span>
 
                             {accordionIndex === 1 ? <UpArrow /> : <DownArrow />}
                         </button>
@@ -168,9 +167,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    How does it Work?
-                                </span>
+                                <span className="flex text-lg font-semibold">
+                                    How does it Work                         </span>
 
                                 {accordionIndex === 2 ? (
                                     <UpArrow />
@@ -219,9 +217,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Where can I Invest?
-                                </span>
+                                <span className="flex text-lg font-semibold">
+                                    Where can I Invest                           </span>
 
                                 {accordionIndex === 3 ? (
                                     <UpArrow />
@@ -262,8 +259,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Does Nuqi require a minimum investment to
+                                <span className="flex text-lg font-semibold">
+                                    Does Nuqi require a mum investment to
                                     get started?
                                 </span>
                                 {accordionIndex === 4 ? (
@@ -300,8 +297,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Can you buy fractional shares of stocks
+                                <span className="flex text-lg font-semibold">
+                                    Can you buy fractionaares of stocks
                                     through Nuqi?
                                 </span>
                                 {accordionIndex === 5 ? (
@@ -334,8 +331,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Does Nuqi offer investment options that
+                                <span className="flex text-lg font-semibold">
+                                    Does Nuqi offer invest options that
                                     consider social responsibility?
                                 </span>
                                 {accordionIndex === 6 ? (
@@ -372,8 +369,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Can you set up automatic investing through
+                                <span className="flex text-lg font-semibold">
+                                    Can you set up automainvesting through
                                     the Nuqi app?
                                 </span>
                                 {accordionIndex === 7 ? (
@@ -407,8 +404,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Does Nuqi perform RISK profiling to
+                                <span className="flex text-lg font-semibold">
+                                    Does Nuqi perform RISofiling to
                                     understand your investment goals?
                                 </span>
                                 {accordionIndex === 8 ? (
@@ -445,8 +442,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Can you adjust your investment plan based on
+                                <span className="flex text-lg font-semibold">
+                                    Can you adjust your itment plan based on
                                     changing risk tolerance?
                                 </span>
                                 {accordionIndex === 9 ? (
@@ -484,8 +481,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Does Nuqi have resources to learn about
+                                <span className="flex text-lg font-semibold">
+                                    Does Nuqi have resourto learn about
                                     investing for beginners?
                                 </span>
                                 {accordionIndex === 10 ? (
@@ -522,8 +519,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Are there live events to learn more about
+                                <span className="flex text-lg font-semibold">
+                                    Are there live eventslearn more about
                                     Nuqi's investment strategies?
                                 </span>
                                 {accordionIndex === 11 ? (
@@ -560,8 +557,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Can you track your investments' performance
+                                <span className="flex text-lg font-semibold">
+                                    Can you track your inments' performance
                                     live on the Nuqi app?
                                 </span>
                                 {accordionIndex === 12 ? (
@@ -598,8 +595,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Does Nuqi help with asset allocation based
+                                <span className="flex text-lg font-semibold">
+                                    Does Nuqi help with a allocation based
                                     on your goals?
                                 </span>
                                 {accordionIndex === 13 ? (
@@ -636,8 +633,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Does Nuqi collaborate with international
+                                <span className="flex text-lg font-semibold">
+                                    Does Nuqi collaborateh international
                                     brokers to offer a wider range of investment
                                     options?
                                 </span>
@@ -675,8 +672,8 @@ const Faq = () => {
                                     else setAccordionIndex(-1);
                                 }}
                             >
-                                <span className="flex text-md font-semibold">
-                                    Does Nuqi leverage its partnerships to
+                                <span className="flex text-lg font-semibold">
+                                    Does Nuqi leverage itrtnerships to
                                     provide access to in-depth research reports?
                                 </span>
                                 {accordionIndex === 15 ? (
@@ -703,135 +700,134 @@ const Faq = () => {
                     Didn’t find the answer you are looking for?{" "}
                     <a
                         href="contact"
-                        className="underline-offset-4 hover:underline text-secondary text-md font-bold"
+                        className="underline-offset-4 hover:underline text-secondary text-lg font-bold"
                     >
-                        Contact us
-                    </a>{" "}
+                        Contact us           </a>{" "}
                 </p>
             </div>
 
             <div className="mt-10 grid w-full grid-cols-1 items-start gap-4 md:grid-cols-3 container">
                 <div className="grid grid-cols-1 items-start gap-4">
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">What is Nuqi?
+                        <h3 className="text-lg font-medium text-black leading-3 dark:text-black-200">What is Nuqi?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">NUQI is an independent advisory platform, licensed by SEBI in India aimed at both first-time investors starting their investment journey and seasoned investors looking to diversify their portfolio.
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">NUQI is an independent advisory platform, licensed by SEBI in India aimed at both first-time investors starting their investment journey and seasoned investors looking to diversify their portfolio.
                             NUQI deploys its in-house expertise to create portfolios tailored for specific Investor profile/ Investment Themes. NUQI has a team of qualified Investment Managers and select financial bodies to independently screen the Universe of Ethical investments with both Domestic and International market exposures. The platform uses multiple criteria to make a selection of Stocks, ETFs, Mutual funds, Sukuks etc. with Social Equity, Ethical operations, good Governance, and Environment protection as core investment themes which are considered as key elements aimed towards Sustainable Growth.
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">   Does Nuqi offer investment options that consider social responsibility? 
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">   Does Nuqi offer investment options that consider social responsibility? 
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">YES, our Curated Equity Portfolios (CEP’s) are based on Ethical / Social & Sustainable ESS Principles.</p>
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">YES, our Curated Equity Portfolios (CEP’s) are based on Ethical / Social & Sustainable ESS Principles.</p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Where can I Invest?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">Where can I Invest?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">With NUQI, now you have the option to invest in select financial products in India and in International markets. NUQI takes a cautious approach and presently will only recommend investment instruments that have been pre-screened and carry returns as per your risk profile.
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">With NUQI, now you have the option to invest in select financial products in India and in International markets. NUQI takes a cautious approach and presently will only recommend investment instruments that have been pre-screened and carry returns as per your risk profile.
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">
-                            Does Nuqi have resources to learn about investing for beginners?
+                        <h3 className="text-lg font-medium text-black-700 dark:text-black-200 leading-5">
+            Does Nuqi have resources to learn about investing for beginners?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">
                             YES NUQI Ethosphere is our research library to enthusiastic ones.
                         </p>
                     </div>
-                    <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Does Nuqi help with asset allocation based on your goals?
+                    <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)rk:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
+                        <h3 className="text-lg font-medium text-black-700 dark:text-black-200 leading-5">Does Nuqi help with asset allocation based on your goals?
 
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  "> YES, Asset allocation is the core for investment advisory.
+                        <p className="mt-2 text-sm text-black dark:text-black-400  "> YES, Asset allocation is the core for investment advisory.
                         </p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 items-start gap-4">
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Why Invest throgh Nuqi?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">Why Invest throgh Nuqi?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">Access diverse portfolio featuring 250+ Indian stocks and 1000+ global stocks, along with ETFs, mutual funds, and sukuks.
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">Access diverse portfolio featuring 250+ Indian stocks and 1000+ global stocks, along with ETFs, mutual funds, and sukuks.
                             Access to global markets like US, UK, Europe and more.
                             Access global and local ethical mutual funds for systematic investment planning and lumpsum.
                             Pre-designed portfolios by qualified investment advisors for long term investing.
                         </p>
                     </div>
-                    <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Does Nuqi require a minimum investment to get started?
+                    <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0. dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
+                        <h3 className="text-lg font-medium text-black-700 dark:text-black-200 leading-5">Does Nuqi require a minimum investment to get started?
 
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">You can start your NUQI investment journey with USD 100 *</p>
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">You can start your NUQI investment journey with USD 100 *</p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Can you set up automatic investing through the Nuqi app?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">Can you set up automatic investing through the Nuqi app?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">YES
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">YES
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
 
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Does Nuqi perform RISK profiling to understand your investment goals?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">Does Nuqi perform RISK profiling to understand your investment goals?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">
                             YES, NUQI performs through RISK profiling for all clients.
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
 
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Are there live events to learn more about Nuqi's investment strategies?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">Are there live events to learn more about Nuqi's investment strategies?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">
                             YES live online sessions / Global Event Participations on the cards.
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
 
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Does Nuqi collaborate with international brokers to offer a wider range of investment options?
+                        <h3 className="text-lg font-medium text-nel-700 dark:text-black-200 leading-5">Does Nuqi collaborate with international brokers to offer a wider range of investment options?
                         
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">
                         YES collaborations is one of the pillars for NUQI Wealth to provide.
                         </p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 items-start gap-4">
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">How does it work?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">How does it work?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">
                             NUQI mobile app is soon available for Android and iOS devices and is free to download. You can register for a free account and browse the how-to-use instructions, market news, featured portfolios – all in the app itself. Once you have filled out the personal assessment questionnaire, the NUQI platform will assign an investor profile to you based on your risk appetite and recommend investment instruments accordingly. You can always change your risk profile by re-taking the questionnaire and NUQI will once again offer you a list of new recommendations suited to you.
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Can you buy fractional shares of stocks through Nuqi?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">Can you buy fractional shares of stocks through Nuqi?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">Yes
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">Yes
                         </p>
                     </div>
-                    <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Can you adjust your investment plan based on changing risk tolerance?
+                    <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-nel-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
+                        <h3 className="text-lg font-medium text-black-700 dark:text-black-200 leading-5">Can you adjust your investment plan based on changing risk tolerance?
 
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">YES you have the flexibility to change your RISK profile basis any material change in your circumstances.
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">YES you have the flexibility to change your RISK profile basis any material change in your circumstances.
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Can you track your investments' performance live on the Nuqi app?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">Can you track your investments' performance live on the Nuqi app?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">YES our exhaustive portfolio give you 360 Degree View on your investments.
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">YES our exhaustive portfolio give you 360 Degree View on your investments.
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Can you track your investments' performance live on the Nuqi app?
+                        <h3 className="text-lg font-medium text-black dark:text-black-200 leading-5">Can you track your investments' performance live on the Nuqi app?
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  ">YES our exhaustive portfolio give you 360 Degree View on your investments.
+                        <p className="mt-2 text-sm text-black dark:text-black-400  ">YES our exhaustive portfolio give you 360 Degree View on your investments.
                         </p>
                     </div>
                     <div className="cursor-pointer rounded-2xl bg-white p-8 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)] dark:bg-neutral-900 dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
-                        <h3 className="text-md font-medium text-neutral-700 dark:text-neutral-200">Does Nuqi leverage its partnerships to provide access to in-depth research reports?
+                        <h3 className="text-lg font-medium text-nal-700 dark:text-black-200 leading-5">Does Nuqi leverage its partnerships to provide access to in-depth research reports?
                        
                         </h3>
-                        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400  "> Yes IRIS & Ethosphere keep a watch.
+                        <p className="mt-2 text-sm text-black dark:text-black-400  "> Yes IRIS & Ethosphere keep a watch.
                         </p>
                     </div>
                 </div>

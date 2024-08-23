@@ -4,10 +4,10 @@ const Video = () => {
     return (
         <div className="flex flex-col gap-8 pb-12 items-center justify-center antialiased">
             <div>
-                <h1 className="text-3xl font-black font-sans tracking-tighter md:text-3xl text-center">
+                <h1 className="text-3xl font-black   tracking-tighter md:text-3xl text-center">
                     Get Started
                 </h1>
-                <h2 className="text-xl font-bold font-sans tracking-tighter md:text-xl text-center py-2 text-secondary">
+                <h2 className="text-xl font-bold   tracking-tighter md:text-xl text-center py-2 text-secondary">
                     Your <span className="text-primary">Nuqi</span> App
                 </h2>
             </div>

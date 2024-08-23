@@ -215,7 +215,7 @@ const Prive = () => {
             </div> */}
             <div className=" py-10 container">
                 <div className="justify-center flex align-middle">
-                    <h1 className="font-sf-pro-display text-3xl pb-5 font-bold leading-tight text-transparent  bg-clip-text bg-gradient-to-r from-[#ba9e72] via-[#ccb48d] to-[#d1ba96] sm:text-3xl lg:text-5xl">
+                    <h1 className="font-sf-pro-display text-3xl pb-5 font-bold leading-tight text-transparent  bg-clip-text bg-gradient-to-r from-[#ba9e72] via-[#ccb48d] to-[#d1ba96] sm:text-3xl lg:text-4xl">
                         Services
                     </h1>
 
@@ -254,7 +254,7 @@ const Prive = () => {
                         />
                     ))}
                 </BentoGrid>
-                <div className="flex justify-center mt-10">
+                {/* <div className="flex justify-center mt-10">
                     <button
                         className="md:col-start-2 inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#3d4957,45%,#1e2631,55%,#3d4957)] bg-[length:200%_100%] px-4 lg:px-6 font-medium text-background transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 whitespace-nowrap"
                         type="button"
@@ -277,7 +277,7 @@ const Prive = () => {
                             />
                         </svg>
                     </button>
-                </div>
+                </div> */}
 
             </div><svg
                 xmlns="http://www.w3.org/2000/svg"

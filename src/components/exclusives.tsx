@@ -20,7 +20,7 @@ const Exclusives = () => {
 
     return (
         <div className="flex flex-col gap-8 pb-12 items-center justify-center antialiased container">
-            {/* <h1 className="text-3xl font-black font-sans tracking-tighter md:text-3xl text-center">
+            {/* <h1 className="text-3xl font-black   tracking-tighter md:text-3xl text-center">
                 Exclusively at Nuqi
             </h1> */}
             <div className="grid md:grid-cols-1 gap-4 md:gap-8">
@@ -30,17 +30,17 @@ const Exclusives = () => {
                             <img src={e.image} className="" />
                         </div>
                         <div className="p-6">
-                            <h5 className="block mb-2 font-sans text-lg antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            <h5 className="block mb-2   text-lg antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                                 {e.title}
                             </h5>
-                            <p className="block font-sans text-sm antialiased font-light leading-relaxed text-inherit">
+                            <p className="block   text-sm antialiased font-light leading-relaxed text-inherit">
                                 {e.description}
                             </p>
                         </div>
                         <div className="p-6 pt-0">
                             <a href="#" className="inline-block">
                                 <button
-                                    className="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-slate-500/10 active:bg-gray-900/20"
+                                    className="flex items-center gap-2 px-4 py-2   text-xs font-bold text-center uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-slate-500/10 active:bg-gray-900/20"
                                     type="button"
                                     onClick={() => {
                                         if (index !== 2) {

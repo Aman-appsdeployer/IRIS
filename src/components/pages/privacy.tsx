@@ -1,9 +1,9 @@
 const Privacy = () => {
     return (
         <section className="py-10 sm:py-16">
-            <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl text-white">
                 <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#dbc7a6] via-[#3d4957] to-[#282e3a] sm:text-4xl lg:text-5xl p-6">
+                    <h2 className="text-3xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r  from-[#dbc7a6] via-[#5ce8ea] to-[#282e3a] sm:text-4xl lg:text-5xl p-6">
                         Privacy Policy
                     </h2>
                 </div>

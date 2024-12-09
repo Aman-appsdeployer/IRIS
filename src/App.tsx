@@ -1,24 +1,24 @@
 import { Route, Routes } from "react-router-dom";
-import RootLayout from "./components/root-layout";
-import Home from "./components/pages/home";
-import Faq from "./components/pages/faq";
-import ContactPage from "./components/pages/contact";
 import AboutPage from "./components/pages/about";
 import Advisory from "./components/pages/advisory";
+import ContactPage from "./components/pages/contact";
+import Cookies from "./components/pages/cookies";
+import Disclaimer from "./components/pages/disclaimer";
+import Ethosphere from "./components/pages/ethosphere";
+import Faq from "./components/pages/faq";
+import Home from "./components/pages/home";
+import Iris from "./components/pages/iris";
 import Press from "./components/pages/press";
 import Privacy from "./components/pages/privacy";
-import Terms from "./components/pages/terms";
-import Disclaimer from "./components/pages/disclaimer";
-import Stock from "./components/pages/stock";
-import Cookies from "./components/pages/cookies";
-import Iris from "./components/pages/iris";
-import Ethosphere from "./components/pages/ethosphere";
 import Prive from "./components/pages/prive";
+import Stock from "./components/pages/stock";
+import Terms from "./components/pages/terms";
+import RootLayout from "./components/root-layout";
 // import {Hnis} from "./components/pages/hnis";
 
 const App = () => {
     return (
-        <div className="min-h-screen   text-foreground">
+        <div className="min-h-screen   text-foreground  bg-black">
             <Routes>
                 <Route element={<RootLayout />}>
                     <Route index element={<Home />} />

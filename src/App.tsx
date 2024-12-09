@@ -44,7 +44,3 @@ const App = () => {
 
 export default App;
 
-//text-lg card heading
-//text-sm card details
-//
-//

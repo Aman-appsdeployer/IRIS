@@ -163,7 +163,9 @@ function NavItem({
                 to={href}
                 className={clsx(
                     "relative block px-3 py-2 transition text-[#F5DEB3] ",
-                    isActive ? "bg-[#F5DEB3] text-black" : "bg-black text-[#F5DEB3]"
+                    isActive ? "bg-[#F5DEB3] text-black" : "bg-black text-[#F5DEB3]",
+                    href=="/"?"rounded-s-full ps-4":"",
+                    href=="/ethosphere"?"rounded-e-full pe-4":"",
                 )}
             >
                 {children}
@@ -183,11 +185,11 @@ function DesktopNavigation() {
 
     return (
         <nav className="relative pointer-events-auto hidden md:block">
-                {activeTab == '/ethosphere' && <div className={`w-1/2 rounded-full absolute bg-[#F5DEB3] top-0 bottom-0 right-0 `}></div>}
-            {activeTab == '/' && <div className={`w-1/2 absolute rounded-full bg-[#F5DEB3] top-0 bottom-0 left-0 `}></div>}
+                {/* {activeTab == '/ethosphere' && <div className={`w-1/2 rounded-full absolute bg-[#F5DEB3] top-0 bottom-0 right-0 `}></div>}
+            {activeTab == '/' && <div className={`w-1/2 absolute rounded-full bg-[#F5DEB3] top-0 bottom-0 left-0 `}></div>} */}
 
 
-            <ul className="flex items-center  whitespace-nowrap rounded-full px-3 text-[0.95rem] font-semibold shadow-2xl dark:shadow-xl dark:shadow-white/5 ring-1 ring-zinc-900/5 bg-background bg-black">
+            <ul className="flex items-center  whitespace-nowrap  text-[0.95rem] font-semibold bg-transparent">
             
                 <NavItem
                     href="/"

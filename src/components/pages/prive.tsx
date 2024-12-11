@@ -1,3 +1,12 @@
+import { Footer } from "../footer";
+import { Navbar } from "../navbar";
+// import { useNavigate } from "react-router-dom";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import { useEffect } from "react";
+// import { motion } from 'framer-motion';
+// import UseInView from "../ui/UseInView";
+// import video from '../../assets/images/waves 3.mp4'
 import {
     IconArrowWaveRightUp,
     IconBoxAlignRightFilled,
@@ -8,8 +17,6 @@ import {
     IconTableColumn,
 } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
-import { Footer } from "../footer";
-import { Navbar } from "../navbar";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 
 const Prive = () => {

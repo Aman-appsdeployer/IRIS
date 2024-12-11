@@ -252,7 +252,7 @@ export function Footer() {
                     <a href="/ethosphere" className="text-primary hover:text-primary-foreground transition">
                         Ethosphere
                     </a>
-                    <a href="/legal" className="text-primary hover:text-primary-foreground transition">
+                    <a href="/privacy" className="text-primary hover:text-primary-foreground transition">
                         Legal
                     </a>
                     <a href="/blogs" className="text-primary hover:text-primary-foreground transition">
